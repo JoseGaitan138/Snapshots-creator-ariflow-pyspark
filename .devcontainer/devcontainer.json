@@ -1,0 +1,17 @@
+{
+    "name": "PySpark Testing",
+    "image": "airflow-spark",
+    "extensions": ["ms-python.python"],
+    "forwardPorts": [8882],
+    "remoteUser": "airflow",
+    "settings": {
+        "python.pythonPath": "/usr/local/bin/python"
+    },
+    "mounts": [
+        {
+            "source": "${localWorkspaceFolder}/data",
+            "target": "/opt/airflow/data ",
+            "type": "bind"
+        }
+    ]
+}
